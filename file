@@ -1,0 +1,9 @@
+Text(planPrice)
+  .id(planPrice)
+  .font(.system(size: 20))
+  .fontWeight(.bold)
+  .transition(.asymmetric(
+     insertion: .move(edge: .top).animation(
+                .easeInOut(duration: 0.1).delay(0.1)),
+                                    removal: .opacity
+                                ))
